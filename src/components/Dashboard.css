@@ -1,0 +1,98 @@
+/* src/components/Dashboard.css */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 1rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dashboard > h2,
+h3 {
+  grid-column: 1 / span 4;
+}
+
+.chart-select {
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.chart {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.dashboard-section {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 4px;
+  min-height: 50vh;
+  min-width: 20vw;
+}
+
+.dashboard-section > .kpi-chart-container {
+  min-width: 40vw !important;
+}
+
+.kpis {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.kpi-chart-container {
+  display: flex;
+}
+
+.chart {
+  flex: 1;
+}
+
+.kpi {
+  background-color: #f0f2f5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.recent-activities,
+.upcoming-tasks {
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.recent-activities ul,
+.upcoming-tasks ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contacts {
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contacts table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contacts th,
+.contacts td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.contacts th {
+  font-weight: bold;
+}
